@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #fff url('../img/pict-soldiers.png' ) center no-repeat fixed;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body{
+    margin: 10% 10% 30px 10%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+h1, h2, p {
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+p{
+    text-indent: 30px;
+}
+
+a{
+    font-size: 1.5rem;
+    cursor: pointer !important;
+    pointer-events: auto;
+    background: linear-gradient(45deg, #162c4e 25%, #0D61BC 66%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shevron, .military-unit-name{
+    width: 50%;
+}
+
+.shevron img{
+    max-width: 30%;
+    padding: 20px; 
+    outline: 2px solid #666;
+    cursor: pointer !important;
+} 
+
+.military-unit-name {
+    font-size: 2rem;
+    color: grey;
+}
+
+.military-unit-name  span{
+    font-size: 2.5rem;
+}
+
+.military-unit-name  span{
+   background: linear-gradient(45deg, #162c4e 25%, #0D61BC 66%, #8AA9D6);
+   -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+   display: table;
+}
+
+main{
+   margin-bottom: 30px;
+}
+
+footer{
+    margin: 0;
+    padding: 5%;
+    height: auto;
+    background: linear-gradient(white, gray);
+}
+footer span{
+    font-size: 1.5rem;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+footer nav{
+    line-height: 60px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+footer .uptotop{
+    display: flex;
+    align-items: center;
+}
+
+footer .uptotop a{
+    font-size: 2rem;
+    line-height: 60px;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 0 15px;
+    transition: .7s liner;
+    text-align: center;
+    color: #0B2349;
+}
+
+footer .uptotop a::before,
+footer .uptotop a::after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    transition: .7s liner;
+}
+
+footer .uptotop a:hover{
+    transform: scale(.8);
+}
+
+footer .uptotop a:hover::before
+{
+    transform: skewX(20deg);
+    border-right: 3px solid;
+    border-left: 3px solid;
+}
+
+footer .uptotop a:hover::after
+{
+    transform: skewY(-20deg);
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+
+/* --------X---------------@media-----------------X--------- */
+  /*    Viewport less then or equal to 520px     */
+  @media only screen and (max-width: 520px) {
+    body{
+        margin: 10% 10% 15px 10%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    p{
+        text-indent: 10px;
+    }
+    .shevron, .military-unit-name{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer{
+       padding: 2%;
+       flex-direction: column;
+    }
+    footer nav{
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    } 
+    footer .uptotop{
+        display: flex;
+        justify-content: center;
+    }
+  }
+  
+  /*  X  Viewport less then or equal to 520px   X  */
+  
